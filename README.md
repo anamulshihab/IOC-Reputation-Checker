@@ -9,18 +9,20 @@ simply clone the repo to your IDE
 ```bash
 git clone https://github.com/anamulshihab/IOC-Reputation-Checker.git
 ```
+You will need to use your own API key for virustotal and abuseipdb in the following lines:
 
+```python
+    API_KEY = "YOUR_KEY_HERE"
+```
 ## Usage
 
 ```python
 #Input
 Enter a valid IPV4 address
- 
+ ```
 # output
 - Shows the number of AV engines flagged the IP as malicious from Virustotal
 - Shows the AbuseIPDB confidence score, number of times the ip was reported
-
-```
 
 ## Contributing
 
