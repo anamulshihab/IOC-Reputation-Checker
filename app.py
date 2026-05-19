@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 def vt(ip):
-    API_KEY = "ef2cd034d5460cbb4c0703e1730f4c18d689a31ca6c7e94789f6c06fa5f687df"
+    API_KEY = "YOUR_API_KEY"
     IP_ADDRESS = ip
 
     url = f"https://www.virustotal.com/api/v3/ip_addresses/{IP_ADDRESS}"
@@ -45,7 +45,7 @@ def abuse(ip):
 
     headers = {
         'Accept': 'application/json',
-        'Key': '3d429b66d80990145e970c2f4bd91b97f344eac7ed7966f54aa2d0bd2b796a4433d53dbb22f0f8fd'
+        'Key': 'YOUR_API_KEY'
     }
 
     response = requests.get(url, headers=headers, params=querystring)
